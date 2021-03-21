@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
-import colors from '../../utils/colors';
+import PropTypes from "prop-types"
+import React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import Icon from "react-native-vector-icons/MaterialIcons"
+import colors from "../../utils/colors"
 
 type Props = {
   icon: string
@@ -33,26 +33,26 @@ export default function DetailListItem({ icon, title, subtitle }: Props) {
         </View>
       </View>
     </View>
-  );
+  )
 }
 
 DetailListItem.propTypes = {
   icon: PropTypes.string,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
-};
+}
 
 DetailListItem.defaultProps = {
   icon: null,
   subtitle: null,
-};
+}
 
 const styles = StyleSheet.create({
   borderContainer: {
     paddingLeft: 24,
   },
   wrapper: {
-    flexDirection: 'row',
+    flexDirection: "row",
     paddingTop: 16,
     paddingBottom: 16,
     paddingRight: 24,
@@ -61,16 +61,16 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
   },
   contentContainer: {
-    justifyContent: 'center',
+    justifyContent: "center",
     flex: 1,
   },
   title: {
     color: colors.black,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 16,
   },
   subtitle: {
@@ -78,4 +78,4 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: 4,
   },
-});
+})

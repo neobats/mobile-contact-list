@@ -1,18 +1,19 @@
-import React from 'react';
-import {
-  Image, StyleSheet, Text, TouchableHighlight, View
-} from 'react-native';
-import colors from '../../utils/colors';
+import React from "react"
+import { Image, StyleSheet, Text, TouchableHighlight, View } from "react-native"
+import colors from "../../utils/colors"
 
 type Props = {
-  name: string,
-  avatar: string,
-  phone: string,
+  name: string
+  avatar: string
+  phone: string
   onPress: () => void
 }
 
 export const ContactListItem: React.FC<Props> = ({
-  name, avatar, phone, onPress,
+  name,
+  avatar,
+  phone,
+  onPress,
 }) => {
   return (
     <TouchableHighlight
@@ -34,7 +35,7 @@ export const ContactListItem: React.FC<Props> = ({
         </View>
       </View>
     </TouchableHighlight>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -43,8 +44,8 @@ const styles = StyleSheet.create({
   },
   contactInfo: {
     flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     paddingTop: 16,
     paddingBottom: 16,
     paddingRight: 24,
@@ -57,13 +58,13 @@ const styles = StyleSheet.create({
     height: 44,
   },
   details: {
-    justifyContent: 'center',
+    justifyContent: "center",
     flex: 1,
     marginLeft: 20,
   },
   title: {
     color: colors.black,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 16,
   },
   subtitle: {
@@ -71,4 +72,4 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: 4,
   },
-});
+})

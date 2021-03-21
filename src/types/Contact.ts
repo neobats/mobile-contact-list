@@ -5,7 +5,7 @@
  */
 
 export interface Contact {
-  name: string | { first: string, last: string }
+  name: string | { first: string; last: string }
   avatar: string
   phone: string
   cell?: string
@@ -22,5 +22,5 @@ export interface ClientContact extends Contact {
 }
 
 export interface ApiContact extends Contact {
-  name: {first: string, last: string}
+  name: { first: string; last: string }
 }
