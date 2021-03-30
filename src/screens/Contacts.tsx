@@ -4,7 +4,7 @@ import {
   FlatList,
   StyleSheet,
   Text,
-  View
+  View,
 } from "react-native"
 import { ContactListItem } from "../components/ContactListItem"
 import { ClientContact } from "../types"
@@ -43,7 +43,14 @@ const Contacts: React.FC = () => {
   }, [contacts])
 
   const renderContact = ({ item }: { item: ClientContact }) => {
-    return <ContactListItem {...item} onPress={() => {}} />
+    return (
+      <ContactListItem
+        {...item}
+        onPress={() => {
+          return
+        }}
+      />
+    )
   }
 
   return (
