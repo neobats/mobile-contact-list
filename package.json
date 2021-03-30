@@ -19,7 +19,7 @@
     "start:types": "tsc --w",
     "start:unit": "npm run test -- --watch",
     "test": "node ./node_modules/jest/bin/jest.js ./src",
-    "test:ci": "cross-env CI=true run-s test:types test:lint test:unit test:expo",
+    "test:ci": "cross-env CI=true run-s test:types test:lint test:unit ",
     "test:lint": "eslint -c ./.eslintrc.js ./src --ext .ts,.tsx",
     "test:lint:fix": "npm run test:lint -- --fix",
     "test:unit": "npm run test",
@@ -40,16 +40,21 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
+    "@react-navigation/native": "^5.9.3",
     "expo": "40.0.0",
     "expo-app-loading": "1.0.1",
     "expo-splash-screen": "0.8.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
-    "react-native-screens": "2.15.2",
+    "react-native-screens": "~2.15.0",
     "react-native-vector-icons": "^8.1.0",
     "react-native-web": "0.14.11",
-    "uuid": "^3.4.0"
+    "uuid": "^3.4.0",
+    "react-native-gesture-handler": "~1.8.0",
+    "react-native-reanimated": "~1.13.0",
+    "react-native-safe-area-context": "3.1.9",
+    "@react-native-community/masked-view": "0.1.10"
   },
   "devDependencies": {
     "@babel/core": "7.13.1",

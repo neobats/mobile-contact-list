@@ -4,7 +4,7 @@
  * DESCRIPTION_HERE
  */
 
-export interface Contact {
+interface Contact {
   name: string | { first: string; last: string }
   avatar: string
   phone: string
